@@ -1,0 +1,9 @@
+html 					{ overflow-y:scroll; }
+body 					{ padding-top:50px;font-family: 'Oswald', sans-serif; }
+h1,h2,h3,h4,h5,p {font-family: 'Oswald', sans-serif;}
+h2 { color: #cccccc;}
+.intro img.logo { width: 150px;}
+.intro img.intro { width: 450px;}
+.btn.btn-primary { border-radius: 0; background: #083452; color:#ffffff;}
+#todo-list 				{ margin-bottom:30px; }
+#todo-form 	 			{ margin-bottom:50px; }
