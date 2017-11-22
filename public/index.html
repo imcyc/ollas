@@ -1,31 +1,50 @@
 <!doctype html>
 <html ng-app="scotchTodo">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C.</title>
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/estilos.css" />
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-	<script src="js/controllers/main.js"></script>
-	<script src="js/services/todos.js"></script>
-	<script src="js/core.js"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C.</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="js/controllers/main.js"></script>
+    <script src="js/services/todos.js"></script>
+    <script src="js/core.js"></script>
 </head>
-<body ng-controller="mainController">
-	<div class="container">
-		
-		<div class="text-center intro">
-			<img src="img/logo-imcyc.svg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="logo" />
-			<h1>CERTIFICACIÓN</h1>
-			<hr />
-			<h2>REVOLVEDORAS DE CONCRETO</h2>
-			<img src="img/olla.jpg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="intro" />
-		</div>
 
-		<div id="todo-list" class="row">
+<body ng-controller="mainController">
+    <div class="container">
+        <div class="text-center intro">
+            <img src="img/logo-imcyc.svg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="logo" />
+            <h1>CERTIFICACIÓN</h1>
+            <hr />
+            <h2>REVOLVEDORAS DE CONCRETO</h2>
+            <img src="img/olla.jpg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="intro" />
+        </div>
+
+        <!-- FORM TO CREATE TODOS -->
+        <div id="todo-form" class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg text-center" placeholder="INGRESAR FABRICANTE" ng-model="formData.text">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">COMENZAR CERTIFICACIÓN</button>
+                </form>
+
+
+
+                <quiz/>
+
+
+            </div>
+        </div>
+
+        <!--<div id="todo-list" class="row">
 			<div class="col-sm-4 col-sm-offset-4">
 				<div class="checkbox" ng-repeat="todo in todos">
 					<label>
@@ -36,25 +55,15 @@
 					<span class="fa fa-spinner fa-spin fa-3x"></span>
 				</p>
 			</div>
-		</div>
+		</div>-->
 
-		<!-- FORM TO CREATE TODOS -->
-		<div id="todo-form" class="row">
-			<div class="col-sm-8 col-sm-offset-2 text-center">
-				<form>
-					<div class="form-group">
-						<input type="text" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
-					</div>
-					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
-				</form>
-			</div>
-		</div>
+        <div class="text-center text-muted footer">
+            <img src="img/logo-imcyc.svg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="logo" />
+            <p><a href="http://www.imcyc.com">Instituto Mexicano del Cemento y del Concreto A.C.</a>.</p>
+        </div>
 
-		<div class="text-center text-muted">
-			<p><a href="http://www.imcyc.com">Instituto Mexicano del Cemento y del Concreto A.C.</a>.</p>
-		</div>
-
-	</div>
+    </div>
 
 </body>
+
 </html>
