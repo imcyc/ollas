@@ -16,8 +16,10 @@ module.exports = function (app) {
 
     app.post('/api/todos', function (req, res) {
         Todo.create({
-            text: req.body.text,
-            done: false
+            fabricante: req.body.fabricante,
+            cliente: req.body.cliente,
+            lote: req.body.lote,
+            nueva: req.body.nueva
         }, function (err, todo) {
             if (err)
                 res.send(err);
