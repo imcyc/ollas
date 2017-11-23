@@ -19,7 +19,9 @@ module.exports = function (app) {
             fabricante: req.body.fabricante,
             cliente: req.body.cliente,
             lote: req.body.lote,
-            nueva: req.body.nueva
+            nueva: req.body.nueva,
+            tambor1: req.body.tambor1,
+            tambor1obs: req.body.tambor1obs
         }, function (err, todo) {
             if (err)
                 res.send(err);

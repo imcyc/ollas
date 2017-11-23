@@ -1,0 +1,34 @@
+<div class="form-group">
+    <h3 class="num">23</h3>
+    <h4 class="medir ambos">MEDIR EN AMBOS</h4>
+    <h2 class="especifica">Funcionalidad de las luces de alto</h2>
+    <div class="form-group nueva">
+        <div class="btn-group btn-group-horizontal">
+          <label class="btn active">
+            <input type="radio" name='luces1' ng-model="formData.luces1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='luces1' ng-model="formData.luces1" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+          </label>
+        </div>
+    </div>
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.luces1obs">
+</div>
+<div class="form-group">
+    <h3 class="num">24</h3>
+    <h4 class="medir ambos">MEDIR EN AMBOS</h4>
+    <h2 class="especifica">Funcionalidad de las luces de reversa</h2>
+    <div class="form-group nueva">
+        <div class="btn-group btn-group-horizontal">
+          <label class="btn active">
+            <input type="radio" name='luces2' ng-model="formData.luces2" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='luces2' ng-model="formData.luces2" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+          </label>
+        </div>
+    </div>
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.luces2obs">
+</div>
+<hr />
+<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">ENVIAR DATOS CERTIFICACIÓN</button>

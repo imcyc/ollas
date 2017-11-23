@@ -4,8 +4,26 @@ h1,h2,h3,h4,h5,p {font-family: 'Oswald', sans-serif;}
 h2 { color: #cccccc;}
 .intro img.logo { width: 200px;}
 .intro img.intro { width: 450px;}
+.sombra {box-shadow: 0 0 5px;margin-top: 10px;}
 .btn.btn-primary { border-radius: 0; background: #083452; color:#ffffff;}
 .footer img { width: 130px; margin-bottom: 15px;}
 .form-group.nueva { font-size: 18px; color:#555555;}
+h3.num { text-align: center; background: #333; color: #fff; padding: 10px; border-radius: 30px;}
+h2.especifica { text-align: left; color:#777777;}
+p.testa { text-align: left; }
+p.especi { color: #fff; background: #ab130f;padding: 5px;border-radius: 50px;}
+h3.seccion {color:#fff; text-align: center; padding: 10px; border-radius: 20px; font-size: 35px;}
+h3.seccion.TAMBOR { background: #0c390f;}
+h3.seccion.PEDESTAL.FRONTAL { background: #003862;}
+h3.seccion.PEDESTAL.TRASERO { background: #4f7896;}
+h3.seccion.SISTEMA.DE.LAVADO { background: #db9600;}
+h3.seccion.SISTEMA.GENERAL { background: #6c3c00;}
+h3.seccion.SISTEMA.SISTEMA.DE.LUCES { background: #d7cb22; color:#333333;}
+h4.medir { text-align: center;background: #ccc;margin-top: -50px;width: 150px;position: relative;float: right;padding: 7px;margin-right: 7px; color: #fff;border-radius: 50px;}
+h4.medir.planta { background: #a3bd31;}
+h4.medir.ambos { background: #2d1c5a;}
+
+.termometro { position: fixed;right: 20px;width: 50px;height: 350px;top: 30%;background: #f2f2f2;box-shadow: 0 0 5px;border-radius: 20px;}
+
 #todo-list 				{ margin-bottom:30px; }
 #todo-form 	 			{ margin-bottom:50px; }

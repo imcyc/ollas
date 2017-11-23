@@ -1,0 +1,71 @@
+<div class="form-group">
+    <h3 class="num">11</h3>
+    <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <h2 class="especifica">Fijación del pedestal frontal</h2>
+    <p class="testa">Método: Verificar que el pedestal frontal esté anclado a las varas del chasis mediante ángulos de sujeción y tornillería, con un torque de 375lb. instrumento: torquímetro </p>
+    <p class="especi">Instrumento: torquímetro</p>
+    <div class="form-group nueva">
+        <div class="btn-group btn-group-horizontal">
+          <label class="btn active">
+            <input type="radio" name='pedestal1' ng-model="formData.pedestal1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='pedestal1' ng-model="formData.pedestal1" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+          </label>
+        </div>
+    </div>
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.pedestal1obs">
+</div>
+<div class="form-group">
+    <h3 class="num">11.1</h3>
+    <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <h2 class="especifica">Las partes internas de la fijación del pedestal con el marco deben de estar fijas. </h2>
+    <p class="testa">Método: Realizar una inspección visual </p>
+    <div class="form-group nueva">
+        <div class="btn-group btn-group-horizontal">
+          <label class="btn active">
+            <input type="radio" name='pedestal2' ng-model="formData.pedestal2" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='pedestal2' ng-model="formData.pedestal2" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+          </label>
+        </div>
+    </div>
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.pedestal2obs">
+</div>
+<div class="form-group">
+    <h3 class="num">11.2</h3>
+    <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <h2 class="especifica">Las partes externas de la fijación del pedestal con el marco  no deben de estar fijas.</h2>
+    <p class="testa">Método: Realizar una inspección visual</p>
+    <div class="form-group nueva">
+        <div class="btn-group btn-group-horizontal">
+          <label class="btn active">
+            <input type="radio" name='pedestal3' ng-model="formData.pedestal3" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='pedestal3' ng-model="formData.pedestal3" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+          </label>
+        </div>
+    </div>
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.pedestal3obs">
+</div>
+<div class="form-group">
+    <h3 class="num">11.3</h3>
+    <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <h2 class="especifica">Debe de existir holgura entre LA PLACA DEL ÁNGULO DE SUGESIÓN DEL PEDESTAL y LA PLACA DEL ÁNGULO DEL CHASIS </h2>
+    <p class="testa">Método: Realizar una inspección visual</p>
+    <div class="form-group nueva">
+        <div class="btn-group btn-group-horizontal">
+          <label class="btn active">
+            <input type="radio" name='pedestal4' ng-model="formData.pedestal4" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='pedestal4' ng-model="formData.pedestal4" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+          </label>
+        </div>
+    </div>
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.pedestal4obs">
+</div>
+<hr />
+<button class="btn btn-primary btn-lg" ng-click="comenzarPedestalTrasero()">COMENZAR SECCIÓN PEDESTAL TRASERO</button>

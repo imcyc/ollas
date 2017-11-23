@@ -18,29 +18,33 @@
 </head>
 
 <body ng-controller="mainController">
-    <div class="container">
+
+    <div class="termometro" ng-show="termometro">
+      <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+      <div class="medidor"></div>
+    </div>
+
+    <div class="container" id="top">
         <div class="text-center intro">
-            <img src="img/logo-imcyc.svg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="logo" />
+            <img src="img/logo-imcyc.svg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="logo" ng-show="ollaentrada" />
             <h1>CERTIFICACIÓN</h1>
             <hr />
             <h2>REVOLVEDORAS DE CONCRETO</h2>
-            <img src="img/olla.jpg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="intro" />
+            <h3 class="seccion {{seccion}}">{{seccion}}</h3>
+            <img ng-src="{{imagentrada}}" ng-class="sombra" src="" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="intro" />
         </div>
 
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-
-
-
-
                 <form>
-
                     <div ng-show="intro" ng-include="'partes/intro.html'"></div>
-
-                    <!-- <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">ENVIAR DATOS CERTIFICACIÓN</button> -->
+                    <div ng-show="tambor" ng-include="'partes/tambor.html'"></div>
+                    <div ng-show="pedestalfrontal" ng-include="'partes/pedestalfrontal.html'"></div>
+                    <div ng-show="pedestaltrasero" ng-include="'partes/pedestaltrasero.html'"></div>
+                    <div ng-show="lavado" ng-include="'partes/lavado.html'"></div>
+                    <div ng-show="general" ng-include="'partes/general.html'"></div>
+                    <div ng-show="luces" ng-include="'partes/luces.html'"></div>
                 </form>
-                <div ng-model="falla"></div>
-                <quiz/>
             </div>
         </div>
 
@@ -58,6 +62,7 @@
 		</div>-->
 
         <div class="text-center text-muted footer">
+          <hr />
             <img src="img/logo-imcyc.svg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="logo" />
             <p><a href="http://www.imcyc.com">Instituto Mexicano del Cemento y del Concreto A.C.</a>.</p>
         </div>

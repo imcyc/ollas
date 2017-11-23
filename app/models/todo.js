@@ -16,5 +16,13 @@ module.exports = mongoose.model('Todo', {
     nueva: {
       type: String,
       default: ''
+    },
+    tambor1: {
+      type: Number,
+      default: ''
+    },
+    tambor1obs: {
+      type: String,
+      default: ''
     }
 });
