@@ -1,16 +1,17 @@
 <!doctype html>
 <html ng-app="scotchTodo">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C.</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <link rel="stylesheet" href="css/radios.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="js/controllers/main.js"></script>
     <script src="js/services/todos.js"></script>
     <script src="js/core.js"></script>
@@ -26,29 +27,19 @@
             <img src="img/olla.jpg" alt="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." title="Certificación de OLLAS DE CONCRETO | Instituto Mexicano del Cemento y del Concreto A.C." class="intro" />
         </div>
 
-        <!-- FORM TO CREATE TODOS -->
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
+
+
+
+
                 <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control input-lg text-center" placeholder="INGRESAR FABRICANTE" ng-model="formData.fabricante" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control input-lg text-center" placeholder="INGRESAR NOMBRE DE CLIENTE" ng-model="formData.cliente" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control input-lg text-center" placeholder="INGRESAR NUM DE LOTE" ng-model="formData.lote" required>
-                    </div>
-                    <div class="form-group">
-                      <label class="radio-inline">
-                        <input type="radio" name="nueva" ng-model="formData.nueva" value="nueva">NUEVA
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="nueva" ng-model="formData.nueva" value="reconstruida">RECONSTRUIDA
-                      </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">COMENZAR CERTIFICACIÓN</button>
+
+                    <div ng-show="intro" ng-include="'partes/intro.html'"></div>
+
+                    <!-- <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">ENVIAR DATOS CERTIFICACIÓN</button> -->
                 </form>
+                <div ng-model="falla"></div>
                 <quiz/>
             </div>
         </div>

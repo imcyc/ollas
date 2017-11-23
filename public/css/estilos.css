@@ -6,5 +6,6 @@ h2 { color: #cccccc;}
 .intro img.intro { width: 450px;}
 .btn.btn-primary { border-radius: 0; background: #083452; color:#ffffff;}
 .footer img { width: 130px; margin-bottom: 15px;}
+.form-group.nueva { font-size: 18px; color:#555555;}
 #todo-list 				{ margin-bottom:30px; }
 #todo-form 	 			{ margin-bottom:50px; }
