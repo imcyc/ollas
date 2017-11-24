@@ -1,3 +1,9 @@
+<div class="termometro seccion" ng-show="termometro">
+    <p class="seccion {{seccion}}">TOTAL SECCIÓN</p>
+    <div class="medidor">
+        <h3 class="total">{{ scorePedestalTrasero() }}</h3>
+    </div>
+</div>
 <div class="form-group">
     <h3 class="num">12</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
@@ -5,10 +11,10 @@
     <p class="testa">Método: Verificar que el pedestal trasero esté anclado a las varas del chasis mediante ángulos de sujeción y tornillería, con un torque de 375lb. instrumento: torquímetro </p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='pedestal5' ng-model="formData.pedestal5" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='pedestal5' ng-model="formData.pedestal5" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -22,10 +28,10 @@
     <p class="testa">Método: Realizar una inspección visual</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='pedestal6' ng-model="formData.pedestal6" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='pedestal6' ng-model="formData.pedestal6" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -35,14 +41,14 @@
 <div class="form-group">
     <h3 class="num">12.2</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
-    <h2 class="especifica">Las partes externas de la fijación del pedestal con el marco  no deben de estar fijas.</h2>
+    <h2 class="especifica">Las partes externas de la fijación del pedestal con el marco no deben de estar fijas.</h2>
     <p class="testa">Método: Realizar una inspección visual</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='pedestal7' ng-model="formData.pedestal7" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='pedestal7' ng-model="formData.pedestal7" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -56,10 +62,10 @@
     <p class="testa">Método: Realizar una inspección visual</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='pedestal8' ng-model="formData.pedestal8" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='pedestal8' ng-model="formData.pedestal8" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -69,20 +75,22 @@
 <div class="form-group">
     <h3 class="num">12.4</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
-    <h2 class="especifica">Escalera y plataforma con puntos de sujeción.</h2>
+    <img src="img/escalera.jpg" alt="" title="" class="sombra">
+    <h2 class="especifica">Escalera y plataforma con puntos de sujeción</h2>
     <p class="testa">Método: Verificar que exista una escalera antiderrapante con su plataforma correspondiente. La escalera tendrá tres puntos de apoyo y tubo de seguridad en la plataforma con mecanismo propio.</p>
     <p class="especi">(EN CASO DE APLICAR)</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
-            <input type="radio" name='pedestal8' ng-model="formData.pedestal8" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
+            <label class="btn active">
+            <input type="radio" name='pedestal9' ng-model="formData.pedestal9" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='pedestal8' ng-model="formData.pedestal8" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='pedestal9' ng-model="formData.pedestal9" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
-    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.pedestal8obs">
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.pedestal9obs">
+    <input type="hidden" value="{{ scorePedestalTrasero() }}" ng-model="formData.totalPedestalTrasero">
 </div>
 <hr />
 <button class="btn btn-primary btn-lg" ng-click="comenzarLavado()">COMENZAR SECCIÓN SISTEMA DE LAVADO</button>

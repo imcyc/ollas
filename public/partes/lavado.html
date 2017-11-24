@@ -1,3 +1,9 @@
+<div class="termometro seccion" ng-show="termometro">
+    <p class="seccion {{seccion}}">TOTAL SECCIÓN</p>
+    <div class="medidor">
+        <h3 class="total">{{ scoreLavado() }}</h3>
+    </div>
+</div>
 <div class="form-group">
     <h3 class="num">13</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
@@ -5,10 +11,10 @@
     <p class="testa">Método: Verificar que por lo menos exista un tanque de agua principal presurisado o sin presurisar que no exceda de 125 l/m³ (25 galones por yarda cúbica). Pedir planos de los tanques de agua.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='lavado1' ng-model="formData.lavado1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='lavado1' ng-model="formData.lavado1" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -22,10 +28,10 @@
     <p class="testa">Método: Verificar si tienen medidor de caudal que tengan tuberías para revisar su calibración; si tienen dispositivos de medición ópticos, que su escala sea visible en todo el rango; que tenga mirilla. instrumento: calibrador</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='lavado2' ng-model="formData.lavado2" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='lavado2' ng-model="formData.lavado2" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -35,14 +41,15 @@
 <div class="form-group">
     <h3 class="num">15</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <img src="img/lavado1.jpg" alt="" title="" class="sombra">
     <h2 class="especifica">Bomba de agua (solo si no es presurizado aplica)</h2>
     <p class="testa">Método: Verificar que exista una bomba de agua u otro medio para alimentar agua en el sistema de lavado.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='lavado3' ng-model="formData.lavado3" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='lavado3' ng-model="formData.lavado3" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -52,14 +59,15 @@
 <div class="form-group">
     <h3 class="num">16</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <img src="img/lavado2.jpg" alt="" title="" class="sombra">
     <h2 class="especifica">Mangueras</h2>
     <p class="testa">Método: Verificar que el tramo de manguera para agua cumple con 1" de diámetro, y 3 metros de longitud. El principio y fin de cada manguera se asegura con un abrazadera en cada extremo.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='lavado4' ng-model="formData.lavado4" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='lavado4' ng-model="formData.lavado4" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -73,15 +81,16 @@
     <p class="testa">Método: Verificar que los sistemas a base de aire a presión no exceden los 551.58 kPa(80 psi)</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
-            <input type="radio" name='lavado4' ng-model="formData.lavado4" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
+            <label class="btn active">
+            <input type="radio" name='lavado5' ng-model="formData.lavado5" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='lavado4' ng-model="formData.lavado4" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='lavado5' ng-model="formData.lavado5" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
-    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.lavado4obs">
+    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.lavado5obs">
+    <input type="hidden" value="{{ scoreLavado() }}" ng-model="formData.totalLavado">
 </div>
 <hr />
 <button class="btn btn-primary btn-lg" ng-click="comenzarGeneral()">COMENZAR SECCIÓN SISTEMA GENERAL</button>

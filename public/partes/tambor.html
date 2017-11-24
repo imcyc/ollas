@@ -1,3 +1,10 @@
+<div class="termometro seccion" ng-show="termometro">
+    <p class="seccion {{seccion}}">TOTAL SECCIÓN</p>
+    <div class="medidor">
+        <h3 class="total">{{ scoreTambor() }}</h3>
+    </div>
+</div>
+
 <div class="form-group">
     <h3 class="num">1</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
@@ -6,11 +13,11 @@
     <p class="especi">Medir B,C,D,J | Medir Perímetro | Medir Ext. Tambor</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor1' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor1' ng-model="formData.tambor1" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor1' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -23,11 +30,11 @@
     <p class="testa">Método: Se ubica la escotilla que tenga sello hermético y que cumpla con las dimensiones mínimas de 381mm de ancho y 533mm de largo. instrumento: flexómetro.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor2' ng-model="formData.tambor2" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor2' ng-model="formData.tambor2" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor2' ng-model="formData.tambor2" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -37,15 +44,15 @@
     <h3 class="num">3</h3>
     <h4 class="medir ambos">MEDIR EN AMBOS</h4>
     <h2 class="especifica">Verificación de velocidad RPM</h2>
-    <p class="testa">Método: Se fija un punto en el chasis (ESCOTILLA), para contabilizar las vueltas de tambor.   Los valores obtenidos a velocidad maxima DEBEN SER MÍNIMO 15 VUELTAS en un minuto. instrumento: Cronómetro</p>
+    <p class="testa">Método: Se fija un punto en el chasis (ESCOTILLA), para contabilizar las vueltas de tambor. Los valores obtenidos a velocidad maxima DEBEN SER MÍNIMO 15 VUELTAS en un minuto. instrumento: Cronómetro</p>
     <p class="especi">DEBEN SER MÍNIMO 15 VUELTAS</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor3' ng-model="formData.tambor3" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor3' ng-model="formData.tambor3" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor3' ng-model="formData.tambor3" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -58,11 +65,11 @@
     <p class="testa">Método: PARA OLLAS DE 8m3 EL ANGULO DEBE SER DE 12.1° +,- .5°</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor4' ng-model="formData.tambor4" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor4' ng-model="formData.tambor4" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor4' ng-model="formData.tambor4" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -75,11 +82,11 @@
     <p class="testa">Método: Revisar en la planta que la parte frontal del tambor esté completamente atornillada al reductor con un torque de 215lb. Revisar que la pista esté alineada con los rodillos traseros. instrumento: torquímetro</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor5' ng-model="formData.tambor5" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor5' ng-model="formData.tambor5" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor5' ng-model="formData.tambor5" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -93,11 +100,11 @@
     <p class="especi">PENDIENTE GERMAN</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor6' ng-model="formData.tambor6" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor6' ng-model="formData.tambor6" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor6' ng-model="formData.tambor6" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -110,11 +117,11 @@
     <p class="testa">Método: Verificar con un escantillón o calibrador la distancia entre el tambor y uno de los marcos laterales.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor7' ng-model="formData.tambor7" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor7' ng-model="formData.tambor7" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor7' ng-model="formData.tambor7" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -127,11 +134,11 @@
     <p class="testa">Método: Medir con una laina o un calibrador.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor8' ng-model="formData.tambor8" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor8' ng-model="formData.tambor8" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor8' ng-model="formData.tambor8" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -144,11 +151,11 @@
     <p class="testa">Método: Medir con una laina o un calibrador.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor9' ng-model="formData.tambor9" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor9' ng-model="formData.tambor9" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor9' ng-model="formData.tambor9" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
@@ -162,15 +169,16 @@
     <p class="especi">SOLICITAR PLANO</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='tambor10' ng-model="formData.tambor10" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
-            <input type="radio" name='tambor10' ng-model="formData.tambor10" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+            <label class="btn">
+            <input type="radio" name='tambor10' ng-model="formData.tambor10" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
     <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.tambor10obs">
+    <input type="hidden" value="{{ scoreTambor() }}" ng-model="formData.totalTambor">
 </div>
 <hr />
 <button class="btn btn-primary btn-lg" ng-click="comenzarPedestalFrontal()">COMENZAR SECCIÓN PEDESTAL FRONTAL</button>

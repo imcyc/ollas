@@ -1,34 +1,90 @@
-<div class="form-group">
-    <h3 class="num">23</h3>
-    <h4 class="medir ambos">MEDIR EN AMBOS</h4>
-    <h2 class="especifica">Funcionalidad de las luces de alto</h2>
-    <div class="form-group nueva">
-        <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+<div ng-show="enviando">
+    <div class="termometro seccion" ng-show="termometro">
+        <p class="seccion {{seccion}}">TOTAL SECCIÓN</p>
+        <div class="medidor">
+            <h3 class="total">{{ scoreLuces() }}</h3>
+        </div>
+    </div>
+    <div class="form-group">
+        <h3 class="num">23</h3>
+        <h4 class="medir ambos">MEDIR EN AMBOS</h4>
+        <h2 class="especifica">Funcionalidad de las luces de alto</h2>
+        <div class="form-group nueva">
+            <div class="btn-group btn-group-horizontal">
+                <label class="btn active">
             <input type="radio" name='luces1' ng-model="formData.luces1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+                <label class="btn">
             <input type="radio" name='luces1' ng-model="formData.luces1" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
+            </div>
         </div>
+        <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.luces1obs">
     </div>
-    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.luces1obs">
-</div>
-<div class="form-group">
-    <h3 class="num">24</h3>
-    <h4 class="medir ambos">MEDIR EN AMBOS</h4>
-    <h2 class="especifica">Funcionalidad de las luces de reversa</h2>
-    <div class="form-group nueva">
-        <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+    <div class="form-group">
+        <h3 class="num">24</h3>
+        <h4 class="medir ambos">MEDIR EN AMBOS</h4>
+        <h2 class="especifica">Funcionalidad de las luces de reversa</h2>
+        <div class="form-group nueva">
+            <div class="btn-group btn-group-horizontal">
+                <label class="btn active">
             <input type="radio" name='luces2' ng-model="formData.luces2" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+                <label class="btn">
             <input type="radio" name='luces2' ng-model="formData.luces2" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
+            </div>
+        </div>
+        <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.luces2obs">
+        <input type="hidden" value="{{ scoreLuces() }}" ng-model="formData.totalLuces">
+    </div>
+    <hr />
+    <button class="btn btn-primary btn-lg" ng-click="calcularTodo()">CALCULAR RESULTADOS</button>
+</div>
+<div ng-show="enviado" class="resultadosfinales">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>RESULTADOS FINALES</h1>
+            <h3>{{ formData.fabricante }}</h3>
+            <hr>
         </div>
     </div>
-    <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.luces2obs">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>RESULTADOS TAMBOR</h2>
+            <h3>{{ scoreTambor() }}</h3>
+        </div>
+        <div class="col-md-4">
+            <h2>RESULTADOS PEDESTAL FRONTAL</h2>
+            <h3>{{ scorePedestalFrontal() }}</h3>
+        </div>
+        <div class="col-md-4">
+            <h2>RESULTADOS PEDESTAL TRASERO</h2>
+            <h3>{{ scorePedestalTrasero() }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>RESULTADOS SISTEMA DE LAVADO</h2>
+            <h3>{{ scoreLavado() }}</h3>
+        </div>
+        <div class="col-md-4">
+            <h2>RESULTADOS SISTEMA GENERAL</h2>
+            <h3>{{ scoreGeneral() }}</h3>
+        </div>
+        <div class="col-md-4">
+            <h2>RESULTADOS LUCES</h2>
+            <h3>{{ scoreLuces() }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2>RESULTADO TOTAL</h2>
+            <h3>{{ scoreTotal() | number: 2 }}</h3>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <hr>
+    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">REGISTRAR DATOS DE CERTIFICACIÓN</button>
 </div>
-<hr />
-<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">ENVIAR DATOS CERTIFICACIÓN</button>

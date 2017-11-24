@@ -1,3 +1,9 @@
+<div class="termometro seccion" ng-show="termometro">
+    <p class="seccion {{seccion}}">TOTAL SECCIÓN</p>
+    <div class="medidor">
+        <h3 class="total">{{ scoreGeneral() }}</h3>
+    </div>
+</div>
 <div class="form-group">
     <h3 class="num">18</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
@@ -5,10 +11,10 @@
     <p class="testa">Método: Verificar que en la periferia de la olla/camión no existan espacios mayores a 30cm sin guardas perimetrales.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general1' ng-model="formData.general1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general1' ng-model="formData.general1" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -18,14 +24,15 @@
 <div class="form-group">
     <h3 class="num">18.1</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <img src="img/general1.jpg" alt="" title="" class="sombra">
     <h2 class="especifica">Cuenta con guarda en flecha</h2>
     <p class="testa">Método: Inspección visual</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general2' ng-model="formData.general2" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general2' ng-model="formData.general2" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -35,14 +42,15 @@
 <div class="form-group">
     <h3 class="num">18.2</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <img src="img/general2.jpg" alt="" title="" class="sombra">
     <h2 class="especifica">Cuenta con válvula de alivio en sistema presurizado</h2>
     <p class="testa">Método: Inspección visual</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general3' ng-model="formData.general3" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general3' ng-model="formData.general3" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -56,10 +64,10 @@
     <p class="testa">Método: Inspección visual</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general4' ng-model="formData.general4" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general4' ng-model="formData.general4" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -69,14 +77,15 @@
 <div class="form-group">
     <h3 class="num">18.4</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
+    <img src="img/general3.jpg" alt="" title="" class="sombra">
     <h2 class="especifica">Cuenta con tapa antiderrames en el canalon de descarga</h2>
     <p class="testa">Método: Inspección visual </p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general5' ng-model="formData.general5" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general5' ng-model="formData.general5" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -89,10 +98,10 @@
     <h2 class="especifica">Placa de identificación en español</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general6' ng-model="formData.general6" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general6' ng-model="formData.general6" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -105,10 +114,10 @@
     <h2 class="especifica">Nombre y domicilio del fabricante</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general7' ng-model="formData.general7" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general7' ng-model="formData.general7" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -121,10 +130,10 @@
     <h2 class="especifica">Capacidad de mezclado</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general8' ng-model="formData.general8" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general8' ng-model="formData.general8" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -137,10 +146,10 @@
     <h2 class="especifica">Fecha de fabricación</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general9' ng-model="formData.general9" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general9' ng-model="formData.general9" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -153,10 +162,10 @@
     <h2 class="especifica">Volumen del tambor</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general10' ng-model="formData.general10" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general10' ng-model="formData.general10" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -169,10 +178,10 @@
     <h2 class="especifica">Número de serie</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general11' ng-model="formData.general11" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general11' ng-model="formData.general11" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -185,10 +194,10 @@
     <h2 class="especifica">Leyenda Hecho en México</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general12' ng-model="formData.general12" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general12' ng-model="formData.general12" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -201,10 +210,10 @@
     <h2 class="especifica">Lugar visible en pedestal frontal o trasero</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general13' ng-model="formData.general13" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general13' ng-model="formData.general13" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -217,10 +226,10 @@
     <h2 class="especifica">LOGO OFICIAL DE HECHO EN MÉXICO </h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general14' ng-model="formData.general14" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general14' ng-model="formData.general14" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -234,10 +243,10 @@
     <p class="testa">Método: 30,000 KG (66,000LBS)</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general15' ng-model="formData.general15" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general15' ng-model="formData.general15" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -251,10 +260,10 @@
     <p class="testa">Método: 9,000 KG</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general16' ng-model="formData.general16" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general16' ng-model="formData.general16" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -268,10 +277,10 @@
     <p class="testa">Método: 21,000 KG</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general17' ng-model="formData.general17" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general17' ng-model="formData.general17" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -284,10 +293,10 @@
     <h2 class="especifica">Capacidad de la olla corresponde a la capacidad del camión</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general18' ng-model="formData.general18" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general18' ng-model="formData.general18" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
@@ -300,15 +309,16 @@
     <h2 class="especifica">Revisar que laS mangueraS no rozaN con algo que pueda producir algun daño</h2>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
-          <label class="btn active">
+            <label class="btn active">
             <input type="radio" name='general19' ng-model="formData.general19" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
           </label>
-          <label class="btn">
+            <label class="btn">
             <input type="radio" name='general19' ng-model="formData.general19" value="0"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
     </div>
     <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.general19obs">
+    <input type="hidden" value="{{ scoreGeneral() }}" ng-model="formData.totalGeneral">
 </div>
 <hr />
 <button class="btn btn-primary btn-lg" ng-click="comenzarLuces()">COMENZAR SECCIÓN SISTEMA DE LUCES</button>
