@@ -26,6 +26,9 @@ h2 {
 
 .intro img.intro {
     width: 450px;
+    box-shadow: 0 0 5px #555;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 .sombra {
@@ -168,6 +171,39 @@ h4.medir.ambos {
 
 img.sombra {
     box-shadow: 0 0 5px #000000;
+}
+
+img.sombra.margen {
+    box-shadow: 0 0 5px #cccccc;
+    margin-bottom: 20px;
+    transition: all 1s;
+    margin-top: 20px;
+}
+
+img.sombra.margen:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-dialog {
+  width: 90%;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-content .close {
+  font-size: 70px;
+position: absolute;
+right: 10px;
+top: -20px;
+color: #ff0000;
+opacity: 1;
+}
+
+.modal-header {
+  border:none;
 }
 
 .termometro.medidor {
