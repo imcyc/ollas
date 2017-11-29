@@ -18,6 +18,7 @@ angular.module('todoController', [])
     $scope.luces = false;
     $scope.enviando = true;
     $scope.enviado = false;
+    $scope.regresar = false;
 
     $scope.scoreTambor = function() {
         var rTambor1 = parseInt($scope.formData.tambor1);
@@ -149,7 +150,6 @@ angular.module('todoController', [])
         .then(function(data) {
             $scope.todos = data;
             $scope.loading = false;
-
         });
 
     $scope.comenzarTodo = function() {
@@ -165,8 +165,21 @@ angular.module('todoController', [])
         $scope.lavado = false;
         $scope.general = false;
         $scope.luces = false;
-
-    }
+        $scope.regresar = true;
+        $scope.irAtras = function() {
+          $scope.intro = true;
+          $scope.ollaentrada = true;
+          $scope.tambor = false;
+          $scope.pedestalfrontal = false;
+          $scope.pedestaltrasero = false;
+          $scope.lavado = false;
+          $scope.general = false;
+          $scope.luces = false;
+          $scope.regresar = false;
+          $scope.imagentrada = "img/olla.jpg";
+          $scope.seccion = false;
+        };
+    };
 
     $scope.comenzarPedestalFrontal = function() {
         $scope.intro = false;
