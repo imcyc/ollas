@@ -82,7 +82,7 @@ p.especi {
 }
 
 h3.seccion {
-    color: #fff;
+    color: #333;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
@@ -91,27 +91,33 @@ h3.seccion {
 
 h3.seccion.TAMBOR {
     background: #0c390f;
+    color: #fff;
 }
 
 h3.seccion.PEDESTAL.FRONTAL {
     background: #003862;
+    color: #fff;
 }
 
 h3.seccion.PEDESTAL.TRASERO {
     background: #4f7896;
+    color: #fff;
 }
 
 h3.seccion.SISTEMA.DE.LAVADO {
     background: #db9600;
+    color: #fff;
 }
 
 h3.seccion.SISTEMA.GENERAL {
     background: #6c3c00;
+    color: #fff;
 }
 
 h3.seccion.SISTEMA.SISTEMA.DE.LUCES {
     background: #d7cb22;
     color: #333333;
+    color: #fff;
 }
 
 h4.medir {
@@ -272,6 +278,12 @@ img.sombra.margen:hover {
     color: #fff;
     margin-right: 1px;
     margin-left: 1px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.secciones.ul ul li:hover {
+    background: #777777;
 }
 
 #todo-list {
