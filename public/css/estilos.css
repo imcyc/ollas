@@ -335,3 +335,12 @@ img.sombra.margen:hover {
 .modal-content {
     background: #000000;
 }
+
+#chartdiv {
+    width: 100%;
+    height: 450px;
+}
+
+#chartdiv a {
+    display: none !important;
+}

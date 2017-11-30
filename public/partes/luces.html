@@ -50,41 +50,92 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
-            <h2>RESULTADOS TAMBOR</h2>
-            <h3>{{ scoreTambor() }}</h3>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>RESULTADOS TAMBOR</h2>
+                    <h3>{{ scoreTambor() }}</h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>RESULTADOS PEDESTAL FRONTAL</h2>
+                    <h3>{{ scorePedestalFrontal() }}</h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>RESULTADOS PEDESTAL TRASERO</h2>
+                    <h3>{{ scorePedestalTrasero() }}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>RESULTADOS SISTEMA DE LAVADO</h2>
+                    <h3>{{ scoreLavado() }}</h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>RESULTADOS SISTEMA GENERAL</h2>
+                    <h3>{{ scoreGeneral() }}</h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>RESULTADOS LUCES</h2>
+                    <h3>{{ scoreLuces() }}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h2>RESULTADO TOTAL</h2>
+                    <h3>{{ scoreTotal() | number: 2 }}</h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h2>RESULTADOS PEDESTAL FRONTAL</h2>
-            <h3>{{ scorePedestalFrontal() }}</h3>
+        <div class="col-md-6">
+            <script>
+                var chart = AmCharts.makeChart("chartdiv", {
+                    "type": "radar",
+                    "theme": "light",
+                    "dataProvider": [{
+                        "country": "Tambor",
+                        "litres": 156.9
+                    }, {
+                        "country": "Pedestal-Frontal",
+                        "litres": 131.1
+                    }, {
+                        "country": "Pedestal-Trasero",
+                        "litres": 115.8
+                    }, {
+                        "country": "Sistema-Lavado",
+                        "litres": 109.9
+                    }, {
+                        "country": "Sistema-General",
+                        "litres": 108.3
+                    }, {
+                        "country": "Sistema-Luces",
+                        "litres": 99
+                    }],
+                    "valueAxes": [{
+                        "axisTitleOffset": 20,
+                        "minimum": 0,
+                        "axisAlpha": 0.15
+                    }],
+                    "startDuration": 2,
+                    "graphs": [{
+                        "balloonText": "[[value]] litres of beer per year",
+                        "bullet": "round",
+                        "lineThickness": 2,
+                        "valueField": "litres"
+                    }],
+                    "categoryField": "country",
+                    "export": {
+                        "enabled": true
+                    }
+                });
+            </script>
+            <div id="chartdiv"></div>
         </div>
-        <div class="col-md-4">
-            <h2>RESULTADOS PEDESTAL TRASERO</h2>
-            <h3>{{ scorePedestalTrasero() }}</h3>
-        </div>
+
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h2>RESULTADOS SISTEMA DE LAVADO</h2>
-            <h3>{{ scoreLavado() }}</h3>
-        </div>
-        <div class="col-md-4">
-            <h2>RESULTADOS SISTEMA GENERAL</h2>
-            <h3>{{ scoreGeneral() }}</h3>
-        </div>
-        <div class="col-md-4">
-            <h2>RESULTADOS LUCES</h2>
-            <h3>{{ scoreLuces() }}</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <h2>RESULTADO TOTAL</h2>
-            <h3>{{ scoreTotal() | number: 2 }}</h3>
-        </div>
-        <div class="col-md-4"></div>
-    </div>
+
+
     <hr>
     <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">REGISTRAR DATOS DE CERTIFICACIÓN</button>
 </div>
