@@ -20,18 +20,20 @@
 
 <body ng-controller="mainController">
 
-    
+    <div class="regresar" ng-show="regresar">
+        <h2 ng-click="irAtras()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> REGRESAR</h2>
+    </div>
 
     <div class="secciones" ng-show="secciones">
         <p>SECCIONES</p>
-        <div class="secciones">
+        <div class="secciones ul">
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
+                <li ng-click="comenzarTodo()">1</li>
+                <li ng-click="comenzarPedestalFrontal()">2</li>
+                <li ng-click="comenzarPedestalTrasero()">3</li>
+                <li ng-click="comenzarLavado()">4</li>
+                <li ng-click="comenzarGeneral()">5</li>
+                <li ng-click="comenzarLuces()">6</li>
             </ul>
         </div>
     </div>

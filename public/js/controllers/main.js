@@ -138,10 +138,29 @@ angular.module('todoController', [])
         return rLuces1 + rLuces2;
     };
 
-
     $scope.scoreTotal = function() {
         return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces()) / 45 * 10;
     };
+
+    $scope.irAtras = function() {
+        $scope.loading = true;
+        $scope.intro = true;
+        $scope.ollaentrada = true;
+        $scope.tambor = false;
+        $scope.btnintro = false;
+        $scope.seccion = "DATOS DEL CLIENTE";
+        $scope.imagentrada = "img/olla.jpg";
+        $scope.termometro = false;
+        $scope.secciones = false;
+        $scope.pedestalfrontal = false;
+        $scope.pedestaltrasero = false;
+        $scope.lavado = false;
+        $scope.general = false;
+        $scope.luces = false;
+        $scope.enviando = true;
+        $scope.enviado = false;
+        $scope.regresar = false;
+    }
 
     // GET =====================================================================
     // when landing on the page, get all todos and show them
@@ -166,19 +185,6 @@ angular.module('todoController', [])
         $scope.general = false;
         $scope.luces = false;
         $scope.regresar = true;
-        $scope.irAtras = function() {
-          $scope.intro = true;
-          $scope.ollaentrada = true;
-          $scope.tambor = false;
-          $scope.pedestalfrontal = false;
-          $scope.pedestaltrasero = false;
-          $scope.lavado = false;
-          $scope.general = false;
-          $scope.luces = false;
-          $scope.regresar = false;
-          $scope.imagentrada = "img/olla.jpg";
-          $scope.seccion = false;
-        };
     };
 
     $scope.comenzarPedestalFrontal = function() {

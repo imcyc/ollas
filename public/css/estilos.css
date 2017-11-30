@@ -23,14 +23,15 @@ h2 {
 .intro img.logo {
     width: 200px;
 }
+
 .container {
-  padding: 25px 0;
+    padding: 25px 0;
 }
 
 .intro img.intro {
     width: 450px;
     box-shadow: 0 0 5px #555;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -141,7 +142,6 @@ h4.medir.ambos {
     height: 40px;
     bottom: 10px;
     background: #f2f2f2;
-    box-shadow: 0 0 5px;
     border-radius: 10px;
     z-index: 1000;
     overflow: hidden;
@@ -189,24 +189,25 @@ img.sombra.margen:hover {
 }
 
 .modal-dialog {
-  width: 90%;
+    width: 90%;
 }
 
 .modal-content {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .modal-content .close {
-  font-size: 70px;
-position: absolute;
-right: 10px;
-top: -20px;
-color: #ff0000;
-opacity: 1;
+    font-size: 70px;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    color: #ff0000;
+    opacity: 1;
+    text-shadow: none;
 }
 
 .modal-header {
-  border:none;
+    border: none;
 }
 
 .termometro.medidor {
@@ -246,6 +247,33 @@ opacity: 1;
     z-index: 10000;
 }
 
+.secciones.ul {
+    position: absolute;
+    z-index: 100000;
+    left: 90px;
+    top: 0;
+    list-style: none;
+    border-radius: 0;
+}
+
+.secciones.ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.secciones.ul ul li {
+    position: relative;
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
 #todo-list {
     margin-bottom: 30px;
 }
@@ -271,7 +299,7 @@ opacity: 1;
 }
 
 .regresar h2 {
-  position: fixed;
+    position: fixed;
     top: 10px;
     left: 18px;
     font-size: 20px;
@@ -281,13 +309,17 @@ opacity: 1;
     border: 1px solid #dedede;
     padding: 10px;
     border-radius: 20px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     transition: all 1s;
     color: #333333;
     z-index: 100000;
 }
 
 .regresar h2:hover {
-  color: #fff;
-  background: #0F74A3;
+    color: #fff;
+    background: #0F74A3;
+}
+
+.modal-content {
+    background: #000000;
 }
