@@ -53,36 +53,36 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-4">
-                    <h2>RESULTADOS TAMBOR<br><span class="resultax">10 puntos posibles</span></h2>
-                    <h3>{{ scoreTambor() }}</h3>
+                    <h2>RESULTADOS TAMBOR<br><span class="resultax">150 puntos posibles</span></h2>
+                    <h3 id="tt1">{{ scoreTambor() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS PEDESTAL FRONTAL<br><span class="resultax">4 puntos posibles</span></h2>
+                    <h2>RESULTADOS PEDESTAL FRONTAL<br><span class="resultax">40 puntos posibles</span></h2>
                     <h3>{{ scorePedestalFrontal() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS PEDESTAL TRASERO<br><span class="resultax">5 puntos posibles</span></h2>
+                    <h2>RESULTADOS PEDESTAL TRASERO<br><span class="resultax">50 puntos posibles</span></h2>
                     <h3>{{ scorePedestalTrasero() }}</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <h2>RESULTADOS SISTEMA DE LAVADO<br><span class="resultax">5 puntos posibles</span></h2>
+                    <h2>RESULTADOS SISTEMA DE LAVADO<br><span class="resultax">50 puntos posibles</span></h2>
                     <h3>{{ scoreLavado() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS SISTEMA GENERAL<br><span class="resultax">19 puntos posibles</span></h2>
+                    <h2>RESULTADOS SISTEMA GENERAL<br><span class="resultax">190 puntos posibles</span></h2>
                     <h3>{{ scoreGeneral() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS LUCES<br><span class="resultax">2 puntos posibles</span></h2>
+                    <h2>RESULTADOS LUCES<br><span class="resultax">20 puntos posibles</span></h2>
                     <h3>{{ scoreLuces() }}</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <h2>RESULTADO TOTAL</h2>
+                    <h2 style="background:#ff0000;color:#ffffff;padding-top: 30px;">RESULTADO TOTAL</h2>
                     <h3>{{ scoreTotal() | number: 2 }}</h3>
                 </div>
                 <div class="col-md-4"></div>
@@ -90,13 +90,14 @@
         </div>
         <div class="col-md-6">
             <script>
+                var scoper = angular.element("#tt1").scope();
                 var chart = AmCharts.makeChart("chartdiv", {
                     "type": "serial",
                     "theme": "light",
                     "marginRight": 10,
                     "dataProvider": [{
                         "country": "TAMBOR",
-                        "visits": 90,
+                        "visits": scoper,
                         "color": "#FF0F00"
                     }, {
                         "country": "PEDESTAL FRONTAL",
