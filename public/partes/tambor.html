@@ -10,8 +10,87 @@
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
     <h2 class="especifica">El tambor cumple con el volumen y capacidad mencionada en la ficha técnica</h2>
     <p class="testa">Método: medición del tambor con una cinta métrica. Alto, largo y ancho. instrumento: flexómetro e hilo.</p>
-    <img src="img/tambor1.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#myModal">
-    <img src="img/tambor2.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#myModal">
+    <div class="row">
+        <div class="col-md-6 medir">
+
+            <div class="form-group nueva">
+                <p>Medir B | <span style="color:#ff0000;">198.9</span></p>
+                <hr>
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                    <input type="radio" name='tambor1' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                  </label>
+                    <label class="btn">
+                    <input type="radio" name='tambor1' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                  </label>
+                </div>
+            </div>
+            <div class="form-group nueva">
+                <p>Medir C | <span style="color:#ff0000;">224.2</span></p>
+                <hr>
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                        <input type="radio" name='tambor1uno' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                      </label>
+                    <label class="btn">
+                        <input type="radio" name='tambor1uno' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                      </label>
+                </div>
+            </div>
+            <div class="form-group nueva">
+                <p>Medir D | <span style="color:#ff0000;">25.3</span></p>
+                <hr>
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                            <input type="radio" name='tambor1dos' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                          </label>
+                    <label class="btn">
+                            <input type="radio" name='tambor1dos' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                          </label>
+                </div>
+            </div>
+            <div class="form-group nueva">
+                <p>Medir J | <span style="color:#ff0000;">33.4</span></p>
+                <hr>
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                                    <input type="radio" name='tambor1tres' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                                  </label>
+                    <label class="btn">
+                                    <input type="radio" name='tambor1tres' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                                  </label>
+                </div>
+            </div>
+            <div class="form-group nueva">
+                <p>Medir Perímetro</p>
+                <hr>
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                                        <input type="radio" name='tambor1cuatro' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                                      </label>
+                    <label class="btn">
+                                        <input type="radio" name='tambor1cuatro' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                                      </label>
+                </div>
+            </div>
+            <div class="form-group nueva">
+                <p>Medir Ext. Tambor</p>
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                                            <input type="radio" name='tambor1cinco' ng-model="formData.tambor1" value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                                          </label>
+                    <label class="btn">
+                                            <input type="radio" name='tambor1cinco' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                                          </label>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <img src="img/tambor1.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#myModal">
+            <img src="img/tambor2.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#myModal">
+        </div>
+    </div>
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -22,7 +101,7 @@
             </div>
         </div>
     </div>
-    <p class="especi">Medir B,C,D,J | Medir Perímetro | Medir Ext. Tambor</p>
+    <!--<p class="especi">Medir B,C,D,J | Medir Perímetro | Medir Ext. Tambor</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
             <label class="btn active">
@@ -32,14 +111,14 @@
             <input type="radio" name='tambor1' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
           </label>
         </div>
-    </div>
+    </div>-->
     <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.tambor1obs">
 </div>
 <div class="form-group">
     <h3 class="num">2</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
     <h2 class="especifica">Verificación de escotilla</h2>
-    <p class="testa">Método: Se ubica la escotilla que tenga sello hermético y que cumpla con las dimensiones mínimas de 381mm de ancho y 533mm de largo. instrumento: flexómetro.</p>
+    <p class="testa">Método: Se ubica la escotilla que se encuentre sellada y que cumpla con las dimensiones mínimas de 381mm de ancho y 533mm de largo. instrumento: flexómetro.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
             <label class="btn active">
@@ -57,7 +136,6 @@
     <h4 class="medir ambos">MEDIR EN AMBOS</h4>
     <h2 class="especifica">Verificación de velocidad RPM</h2>
     <p class="testa">Método: Se fija un punto en el chasis (ESCOTILLA), para contabilizar las vueltas de tambor. Los valores obtenidos a velocidad maxima DEBEN SER MÍNIMO 15 VUELTAS en un minuto. instrumento: Cronómetro</p>
-    <p class="especi">DEBEN SER MÍNIMO 15 VUELTAS</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
             <label class="btn active">
@@ -91,18 +169,8 @@
     <h3 class="num">5</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
     <h2 class="especifica">Fijación del tambor</h2>
-    <img src="img/tambor3.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#tamborV">
-    <div id="tamborV" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <iframe width="100%" height="550" src="https://www.youtube.com/embed/Jc0LktDfeM8" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p class="testa">Método: Revisar en la planta que la parte frontal del tambor esté completamente atornillada al reductor con un torque de 215lb. Revisar que la pista esté alineada con los rodillos traseros. instrumento: torquímetro</p>
+    <img src="img/tambor3.png" alt="" title="" class="img-responsive sombra margen center-block">
+    <p class="testa">Método: Revisar en la planta que la parte frontal del tambor esté completamente atornillada al reductor con un torque de 215 lb.<br>Instrumento: torquímetro</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
             <label class="btn active">

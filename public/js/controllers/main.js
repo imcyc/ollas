@@ -8,7 +8,7 @@ angular.module('todoController', [])
     $scope.ollaentrada = true;
     $scope.tambor = false;
     $scope.btnintro = false;
-    $scope.imagentrada = "img/olla.jpg";
+    $scope.imagentrada = "img/foto-inicio.JPG";
     $scope.termometro = false;
     $scope.secciones = false;
     $scope.pedestalfrontal = false;
@@ -149,7 +149,7 @@ angular.module('todoController', [])
         $scope.tambor = false;
         $scope.btnintro = false;
         $scope.seccion = "DATOS DEL CLIENTE";
-        $scope.imagentrada = "img/olla.jpg";
+        $scope.imagentrada = "img/foto-inicio.JPG";
         $scope.termometro = false;
         $scope.secciones = false;
         $scope.pedestalfrontal = false;
@@ -176,7 +176,7 @@ angular.module('todoController', [])
         $scope.ollaentrada = false;
         $scope.tambor = true;
         $scope.seccion = "TAMBOR";
-        $scope.imagentrada = "img/tambor.jpg";
+        $scope.imagentrada = "";
         $scope.termometro = true;
         $scope.secciones = true;
         $scope.pedestalfrontal = false;
