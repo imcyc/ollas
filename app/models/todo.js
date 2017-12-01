@@ -23,7 +23,27 @@ module.exports = mongoose.model('Todo', {
     },
     tambor1: {
         type: Number,
-        default: ''
+        default: 0
+    },
+    tambor1uno: {
+        type: Number,
+        default: 0
+    },
+    tambor1dos: {
+        type: Number,
+        default: 0
+    },
+    tambor1tres: {
+        type: Number,
+        default: 0
+    },
+    tambor1cuatro: {
+        type: Number,
+        default: 0
+    },
+    tambor1cinco: {
+        type: Number,
+        default: 0
     },
     tambor1obs: {
         type: String,
@@ -31,7 +51,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor2: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor2obs: {
         type: String,
@@ -39,7 +59,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor3: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor3obs: {
         type: String,
@@ -47,7 +67,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor4: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor4obs: {
         type: String,
@@ -55,7 +75,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor5: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor5obs: {
         type: String,
@@ -63,7 +83,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor6: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor6obs: {
         type: String,
@@ -71,7 +91,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor7: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor7obs: {
         type: String,
@@ -79,7 +99,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor8: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor8obs: {
         type: String,
@@ -87,7 +107,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor9: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor9obs: {
         type: String,
@@ -95,7 +115,7 @@ module.exports = mongoose.model('Todo', {
     },
     tambor10: {
         type: Number,
-        default: ''
+        default: 0
     },
     tambor10obs: {
         type: String,
@@ -103,11 +123,11 @@ module.exports = mongoose.model('Todo', {
     },
     totalTambor: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal1: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal1obs: {
         type: String,
@@ -115,7 +135,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal2: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal2obs: {
         type: String,
@@ -123,7 +143,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal3: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal3obs: {
         type: String,
@@ -131,7 +151,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal4: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal4obs: {
         type: String,
@@ -139,11 +159,11 @@ module.exports = mongoose.model('Todo', {
     },
     totalPedestalFrontal: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal5: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal5obs: {
         type: String,
@@ -151,7 +171,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal6: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal6obs: {
         type: String,
@@ -159,7 +179,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal7: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal7obs: {
         type: String,
@@ -167,7 +187,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal8: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal8obs: {
         type: String,
@@ -175,7 +195,7 @@ module.exports = mongoose.model('Todo', {
     },
     pedestal9: {
         type: Number,
-        default: ''
+        default: 0
     },
     pedestal9obs: {
         type: String,
@@ -183,11 +203,11 @@ module.exports = mongoose.model('Todo', {
     },
     totalPedestalTrasero: {
         type: Number,
-        default: ''
+        default: 0
     },
     lavado1: {
         type: Number,
-        default: ''
+        default: 0
     },
     lavado1obs: {
         type: String,
@@ -195,7 +215,7 @@ module.exports = mongoose.model('Todo', {
     },
     lavado2: {
         type: Number,
-        default: ''
+        default: 0
     },
     lavado2obs: {
         type: String,
@@ -203,7 +223,7 @@ module.exports = mongoose.model('Todo', {
     },
     lavado3: {
         type: Number,
-        default: ''
+        default: 0
     },
     lavado3obs: {
         type: String,
@@ -211,7 +231,7 @@ module.exports = mongoose.model('Todo', {
     },
     lavado4: {
         type: Number,
-        default: ''
+        default: 0
     },
     lavado4obs: {
         type: String,
@@ -219,7 +239,7 @@ module.exports = mongoose.model('Todo', {
     },
     lavado5: {
         type: Number,
-        default: ''
+        default: 0
     },
     lavado5obs: {
         type: String,
@@ -227,11 +247,11 @@ module.exports = mongoose.model('Todo', {
     },
     totalLavado: {
         type: Number,
-        default: ''
+        default: 0
     },
     general1: {
         type: Number,
-        default: ''
+        default: 0
     },
     general1obs: {
         type: String,
@@ -239,7 +259,7 @@ module.exports = mongoose.model('Todo', {
     },
     general1: {
         type: Number,
-        default: ''
+        default: 0
     },
     general1obs: {
         type: String,
@@ -247,7 +267,7 @@ module.exports = mongoose.model('Todo', {
     },
     general2: {
         type: Number,
-        default: ''
+        default: 0
     },
     general2obs: {
         type: String,
@@ -255,7 +275,7 @@ module.exports = mongoose.model('Todo', {
     },
     general3: {
         type: Number,
-        default: ''
+        default: 0
     },
     general3obs: {
         type: String,
@@ -263,7 +283,7 @@ module.exports = mongoose.model('Todo', {
     },
     general4: {
         type: Number,
-        default: ''
+        default: 0
     },
     general4obs: {
         type: String,
@@ -271,7 +291,7 @@ module.exports = mongoose.model('Todo', {
     },
     general5: {
         type: Number,
-        default: ''
+        default: 0
     },
     general5obs: {
         type: String,
@@ -279,7 +299,7 @@ module.exports = mongoose.model('Todo', {
     },
     general6: {
         type: Number,
-        default: ''
+        default: 0
     },
     general6bs: {
         type: String,
@@ -287,7 +307,7 @@ module.exports = mongoose.model('Todo', {
     },
     general7: {
         type: Number,
-        default: ''
+        default: 0
     },
     general7obs: {
         type: String,
@@ -295,7 +315,7 @@ module.exports = mongoose.model('Todo', {
     },
     general8: {
         type: Number,
-        default: ''
+        default: 0
     },
     general8obs: {
         type: String,
@@ -303,7 +323,7 @@ module.exports = mongoose.model('Todo', {
     },
     general9: {
         type: Number,
-        default: ''
+        default: 0
     },
     general9obs: {
         type: String,
@@ -311,7 +331,7 @@ module.exports = mongoose.model('Todo', {
     },
     general10: {
         type: Number,
-        default: ''
+        default: 0
     },
     general10obs: {
         type: String,
@@ -319,7 +339,7 @@ module.exports = mongoose.model('Todo', {
     },
     general11: {
         type: Number,
-        default: ''
+        default: 0
     },
     general11obs: {
         type: String,
@@ -327,7 +347,7 @@ module.exports = mongoose.model('Todo', {
     },
     general12: {
         type: Number,
-        default: ''
+        default: 0
     },
     general12obs: {
         type: String,
@@ -335,7 +355,7 @@ module.exports = mongoose.model('Todo', {
     },
     general13: {
         type: Number,
-        default: ''
+        default: 0
     },
     general13obs: {
         type: String,
@@ -343,7 +363,7 @@ module.exports = mongoose.model('Todo', {
     },
     general14: {
         type: Number,
-        default: ''
+        default: 0
     },
     general14obs: {
         type: String,
@@ -351,7 +371,7 @@ module.exports = mongoose.model('Todo', {
     },
     general15: {
         type: Number,
-        default: ''
+        default: 0
     },
     general15obs: {
         type: String,
@@ -359,7 +379,7 @@ module.exports = mongoose.model('Todo', {
     },
     general16: {
         type: Number,
-        default: ''
+        default: 0
     },
     general16obs: {
         type: String,
@@ -367,7 +387,7 @@ module.exports = mongoose.model('Todo', {
     },
     general17: {
         type: Number,
-        default: ''
+        default: 0
     },
     general17obs: {
         type: String,
@@ -375,7 +395,7 @@ module.exports = mongoose.model('Todo', {
     },
     general18: {
         type: Number,
-        default: ''
+        default: 0
     },
     general18obs: {
         type: String,
@@ -383,7 +403,7 @@ module.exports = mongoose.model('Todo', {
     },
     general19: {
         type: Number,
-        default: ''
+        default: 0
     },
     general19obs: {
         type: String,
@@ -391,6 +411,6 @@ module.exports = mongoose.model('Todo', {
     },
     totalGeneral: {
         type: Number,
-        default: ''
+        default: 0
     }
 });

@@ -349,3 +349,14 @@ img.sombra.margen:hover {
 .col-md-6.medir p {
     text-align: left;
 }
+
+span.resultax {
+    color: #ffffff;
+    background: #ff0000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 95px;
+    font-size: 14px;
+    padding: 5px 0;
+}
