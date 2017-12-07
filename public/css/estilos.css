@@ -165,18 +165,67 @@ h4.medir.ambos {
     z-index: 1000;
 }
 
-.termometro p {
+.termometro p,
+.RanteriorTambor p {
     position: relative;
     float: left;
-    width: 120px;
+    width: 170px;
     padding: 10px 15px;
     background: #111111;
     color: #fff;
     text-align: left;
 }
 
+.RanteriorTambor h3 {
+    margin-top: 2px;
+}
+
+.RanteriorTambor {
+    bottom: 59px;
+}
+
 .termometro p.seccion.TAMBOR {
     background: #0c390f;
+}
+
+.termometro p.seccion.PEDESTAL.FRONTAL {
+    background: #043960;
+}
+
+.termometro p.seccion.PEDESTAL.TRASERO {
+    background: #4f7896;
+}
+
+.termometro p.seccion.SISTEMA.DE.LAVADO {
+    background: #db9600;
+}
+
+.termometro p.seccion.SISTEMA.GENERAL {
+    background: #6c3c00;
+}
+
+.termometro p.seccion.SISTEMA.DE.LUCES {
+    background: #d7cb22;
+}
+
+.RanteriorTambor p.seccion.PEDESTAL.FRONTAL {
+    background: #0F3911;
+}
+
+.RanteriorTambor p.seccion.PEDESTAL.TRASERO {
+    background: #043960;
+}
+
+.RanteriorTambor p.seccion.SISTEMA.DE.LAVADO {
+    background: #507895;
+}
+
+.RanteriorTambor p.seccion.SISTEMA.GENERAL {
+    background: #DA9523;
+}
+
+.RanteriorTambor p.seccion.SISTEMA.DE.LUCES {
+    background: #6c3c00;
 }
 
 img.sombra {
@@ -231,16 +280,21 @@ img.sombra.margen:hover {
     text-align: center;
 }
 
-.secciones {
+.secciones,
+.RanteriorTambor {
     position: fixed;
     right: 20px;
     width: 250px;
     height: 40px;
-    bottom: 70px;
+    bottom: 59px;
     background: #f2f2f2;
     border-radius: 10px;
     z-index: 1000;
     overflow: hidden;
+}
+
+.RanteriorTambor {
+    bottom: 110px;
 }
 
 .secciones p {
@@ -267,6 +321,17 @@ img.sombra.margen:hover {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.medidor h4 {
+    position: absolute;
+    right: 20px;
+    bottom: -7px;
+    font-size: 8px;
+}
+
+.termometro p.total {
+    width: 145px;
 }
 
 .secciones.ul ul li {
