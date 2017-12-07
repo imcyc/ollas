@@ -291,6 +291,78 @@ angular.module('todoController', [])
         $scope.enviando = false;
         $scope.seccion = "RESULTADOS GENERALES";
         $scope.imagentrada = "img/olla.jpg";
+
+        console.log("El test" + $scope.scoreTambor());
+
+
+        $scope.chart = AmCharts.makeChart("chartdiv", {
+            "type": "serial",
+            "theme": "light",
+            "marginRight": 10,
+            "dataProvider": [{
+                "country": "TAMBOR",
+                "visits": $scope.scoreTambor(),
+                "color": "#FF0F00"
+            }, {
+                "country": "PEDESTAL FRONTAL",
+                "visits": $scope.scorePedestalFrontal(),
+                "color": "#FF6600"
+            }, {
+                "country": "PEDESTAL TRASERO",
+                "visits": $scope.scorePedestalTrasero(),
+                "color": "#FF9E01"
+            }, {
+                "country": "SISTEMA DE LAVADO",
+                "visits": $scope.scoreLavado(),
+                "color": "#FCD202"
+            }, {
+                "country": "SISTEMA GENERAL",
+                "visits": $scope.scoreGeneral(),
+                "color": "#F8FF01"
+            }, {
+                "country": "LUCES",
+                "visits": $scope.scoreLuces(),
+                "color": "#B0DE09"
+            }],
+            "valueAxes": [{
+                "axisAlpha": 0,
+                "position": "left",
+                "title": "Registros por sección"
+            }],
+            "startDuration": 1,
+            "graphs": [{
+                "balloonText": "<b>[[category]]: [[value]]</b>",
+                "fillColorsField": "color",
+                "fillAlphas": 0.9,
+                "lineAlpha": 0.2,
+                "type": "column",
+                "valueField": "visits"
+            }],
+            "chartCursor": {
+                "categoryBalloonEnabled": false,
+                "cursorAlpha": 0,
+                "zoomable": false
+            },
+            "categoryField": "country",
+            "categoryAxis": {
+                "gridPosition": "start",
+                "labelRotation": 45
+            },
+            "export": {
+                "enabled": true
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
     };
 
     // CREATE ==================================================================
