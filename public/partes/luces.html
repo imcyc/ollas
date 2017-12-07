@@ -9,9 +9,10 @@
 
 <div ng-show="enviando">
     <div class="termometro seccion" ng-show="termometro">
-        <p class="seccion {{seccion}}">TOTAL SECCIÓN</p>
+        <p class="seccion {{seccion}}">TOTAL SISTEMA DE LAVADO</p>
         <div class="medidor">
             <h3 class="total">{{ scoreLuces() }}</h3>
+            <h4>POSIBLES 20</h4>
         </div>
     </div>
     <div class="form-group">
@@ -62,45 +63,52 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-4">
-                    <h2>RESULTADOS TAMBOR<br><span class="resultax">150 puntos posibles</span></h2>
+                    <h2>RESULTADOS TAMBOR<br><span class="resultax">de 150 puntos posibles</span></h2>
                     <h3 id="tt1">{{ scoreTambor() | number }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS PEDESTAL FRONTAL<br><span class="resultax">40 puntos posibles</span></h2>
+                    <h2>RESULTADOS PEDESTAL FRONTAL<br><span class="resultax">de 40 puntos posibles</span></h2>
                     <h3>{{ scorePedestalFrontal() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS PEDESTAL TRASERO<br><span class="resultax">50 puntos posibles</span></h2>
+                    <h2>RESULTADOS PEDESTAL TRASERO<br><span class="resultax">de 50 puntos posibles</span></h2>
                     <h3>{{ scorePedestalTrasero() }}</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <h2>RESULTADOS SISTEMA DE LAVADO<br><span class="resultax">50 puntos posibles</span></h2>
+                    <h2>RESULTADOS SISTEMA DE LAVADO<br><span class="resultax">de 50 puntos posibles</span></h2>
                     <h3>{{ scoreLavado() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS SISTEMA GENERAL<br><span class="resultax">190 puntos posibles</span></h2>
+                    <h2>RESULTADOS SISTEMA GENERAL<br><span class="resultax">de 190 puntos posibles</span></h2>
                     <h3>{{ scoreGeneral() }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <h2>RESULTADOS LUCES<br><span class="resultax">20 puntos posibles</span></h2>
+                    <h2>RESULTADOS LUCES<br><span class="resultax">de 20 puntos posibles</span></h2>
                     <h3>{{ scoreLuces() }}</h3>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <h2 style="background:#ff0000;color:#ffffff;padding-top: 30px;">RESULTADO TOTAL</h2>
-                    <h3>{{ scoreTotal() | number: 2 }}</h3>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <h2 style="background:#ff0000;color:#ffffff;padding-top: 30px;border-radius: 50px;">PUNTOS TOTALES</h2>
+                    <h3>{{ puntosTotales() }}</h3>
+                    <h4 class="ppsob" style="font-size:15px;">DE 500 PUNTOS POSIBLES</h4>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-5">
+                    <h2 style="background:#ff0000;color:#ffffff;padding-top: 30px;border-radius: 50px;">PORCENTAJE TOTAL</h2>
+                    <h3>{{ scoreTotal() | number: 2 }} %</h3>
+                    <h4 class="ppsob" style="font-size:15px;">DEL 100% POSIBLE</h4>
+                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
         <div class="col-md-6">
             <script>
                 $(document).ready(function() {
-                    var scope = angular.element($("h3#tt1")).scope().scroretamborrr;
+                    var scope = angular.element($("h3#tt1")).scope();
                     console.log("El valor: " + scope);
                 });
             </script>
@@ -173,4 +181,24 @@
 
     <hr>
     <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">REGISTRAR DATOS DE CERTIFICACIÓN</button>
+</div>
+
+<div ng-show="diploma">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/logo-imcyc-diploma.svg" class="img-responsive" alt="" title="" width="200">
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2>CERTIFICACIÓN DE OLLAS DE CONCRETO</h2>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
 </div>

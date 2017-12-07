@@ -152,6 +152,10 @@ angular.module('todoController', [])
         return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces()) * 10 / 51;
     };
 
+    $scope.puntosTotales = function() {
+        return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces());
+    }
+
     $scope.irAtras = function() {
         $scope.loading = true;
         $scope.intro = true;
