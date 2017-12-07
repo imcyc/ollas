@@ -53,7 +53,7 @@ angular.module('todoController', [])
         if (!rTambor9) { rTambor9 = 0 };
         if (!rTambor10) { rTambor10 = 0 };
 
-        return (rTambor1 + rTambor1uno + rTambor1dos + rTambor1tres + rTambor1cuatro + rTambor1cinco + rTambor2 + rTambor3 + rTambor4 + rTambor5 + rTambor6 + rTambor7 + rTambor8 + rTambor9 + rTambor10) * 10;
+        return rTambor1 + rTambor1uno + rTambor1dos + rTambor1tres + rTambor1cuatro + rTambor1cinco + rTambor2 + rTambor3 + rTambor4 + rTambor5 + rTambor6 + rTambor7 + rTambor8 + rTambor9 + rTambor10;
     };
 
     $scope.scorePedestalFrontal = function() {
@@ -65,7 +65,7 @@ angular.module('todoController', [])
         if (!rPedestal2) { rPedestal2 = 0 };
         if (!rPedestal3) { rPedestal3 = 0 };
         if (!rPedestal4) { rPedestal4 = 0 };
-        return (rPedestal1 + rPedestal2 + rPedestal3 + rPedestal4) * 10;
+        return rPedestal1 + rPedestal2 + rPedestal3 + rPedestal4;
     };
 
     $scope.scorePedestalTrasero = function() {
@@ -79,7 +79,7 @@ angular.module('todoController', [])
         if (!rPedestal7) { rPedestal7 = 0 };
         if (!rPedestal8) { rPedestal8 = 0 };
         if (!rPedestal9) { rPedestal9 = 0 };
-        return (rPedestal5 + rPedestal6 + rPedestal7 + rPedestal8 + rPedestal9) * 10;
+        return rPedestal5 + rPedestal6 + rPedestal7 + rPedestal8 + rPedestal9;
     };
 
     $scope.scoreLavado = function() {
@@ -93,7 +93,7 @@ angular.module('todoController', [])
         if (!rLavado3) { rLavado3 = 0 };
         if (!rLavado4) { rLavado4 = 0 };
         if (!rLavado5) { rLavado5 = 0 };
-        return (rLavado1 + rLavado2 + rLavado3 + rLavado4 + rLavado5) * 10;
+        return rLavado1 + rLavado2 + rLavado3 + rLavado4 + rLavado5;
     };
 
     $scope.scoreGeneral = function() {
@@ -136,7 +136,7 @@ angular.module('todoController', [])
         if (!rGeneral18) { rGeneral18 = 0 };
         if (!rGeneral19) { rGeneral19 = 0 };
 
-        return (rGeneral1 + rGeneral2 + rGeneral3 + rGeneral4 + rGeneral5 + rGeneral6 + rGeneral7 + rGeneral8 + rGeneral9 + rGeneral10 + rGeneral11 + rGeneral12 + rGeneral13 + rGeneral14 + rGeneral15 + rGeneral16 + rGeneral17 + rGeneral18 + rGeneral19) * 10;
+        return rGeneral1 + rGeneral2 + rGeneral3 + rGeneral4 + rGeneral5 + rGeneral6 + rGeneral7 + rGeneral8 + rGeneral9 + rGeneral10 + rGeneral11 + rGeneral12 + rGeneral13 + rGeneral14 + rGeneral15 + rGeneral16 + rGeneral17 + rGeneral18 + rGeneral19;
     };
 
     $scope.scoreLuces = function() {
@@ -145,11 +145,11 @@ angular.module('todoController', [])
         if (!rLuces1) { rLuces1 = 0 };
         if (!rLuces2) { rLuces2 = 0 };
 
-        return (rLuces1 + rLuces2) * 10;
+        return rLuces1 + rLuces2;
     };
 
     $scope.scoreTotal = function() {
-        return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces()) * 10 / 50;
+        return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces()) * 10 / 51;
     };
 
     $scope.irAtras = function() {
