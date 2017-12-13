@@ -53,8 +53,8 @@
 <div class="form-group">
     <h3 class="num">15</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
-    <img src="img/lavado1.jpg" alt="" title="" class="sombra">
     <h2 class="especifica"><i class="fa fa-chevron-right" aria-hidden="true"></i> Bomba de agua (solo si no es presurizado aplica)</h2>
+    <img src="img/lavado1.jpg" alt="" title="" class="sombra">
     <p class="testa">Método: Verificar que exista una bomba de agua u otro medio para alimentar agua en el sistema de lavado.</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
@@ -75,7 +75,7 @@
     </div>
     <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.lavado3obs">
 </div>
-<div class="form-group">
+<!-- <div class="form-group">
     <h3 class="num">16</h3>
     <h4 class="medir planta">MEDIR EN PLANTA</h4>
     <img src="img/lavado2.jpg" alt="" title="" class="sombra">
@@ -92,12 +92,13 @@
         </div>
     </div>
     <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.lavado4obs">
-</div>
+</div>-->
 <div class="form-group">
-    <h3 class="num">17</h3>
+    <h3 class="num">16</h3>
     <h4 class="medir ambos">MEDIR EN AMBOS</h4>
     <h2 class="especifica"><i class="fa fa-chevron-right" aria-hidden="true"></i> Presión de tanques de agua (solo si es presurizado aplica)</h2>
-    <p class="testa">Método: Verificar que los sistemas a base de aire a presión no exceden los 551.58 kpa (80 psi)</p>
+    <img src="img/lavado1.jpg" alt="" title="" class="sombra" data-toggle="modal" data-target="#presion">
+    <p class="testa">Método: Verificar que los sistemas a base de aire a presión no excedan los 551.58 kpa (80 psi)</p>
     <div class="form-group nueva">
         <div class="btn-group btn-group-horizontal">
             <label class="btn active">
@@ -113,6 +114,19 @@
     </div>
     <input type="text" class="form-control input-lg text-center" placeholder="Observaciones" ng-model="formData.lavado5obs">
     <input type="hidden" value="{{ scoreLavado() }}" ng-model="formData.totalLavado">
+    <div id="presion" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!--<img src="img/tambor1.jpg" alt="" title="" class="img-responsive margen center-block">-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JRgVTzSWZDA?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 <hr />
 <button class="btn btn-primary btn-lg" ng-click="comenzarGeneral()">COMENZAR SECCIÓN SISTEMA GENERAL</button>

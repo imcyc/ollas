@@ -428,3 +428,7 @@ span.resultax {
     border-radius: 50px;
     padding-bottom: 10px;
 }
+
+.form-control {
+    text-transform: uppercase;
+}
