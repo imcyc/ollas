@@ -12,7 +12,8 @@
     <h2 class="especifica"><i class="fa fa-chevron-right" aria-hidden="true"></i> El tambor cumple con el volumen y capacidad mencionada en la ficha técnica</h2>
     <p class="testa">Método: medición del tambor con una cinta métrica. Alto, largo y ancho. instrumento: flexómetro e hilo.</p>
     <div class="row">
-        <div class="col-md-6 medir">
+        <div class="col-md-12 medir">
+            <!--
             <div class="form-group nueva">
                 <p>Medir B | <span style="color:#ff0000;">5.05 m | 198.9"</span> | .25" +/-</p>
                 <hr>
@@ -63,8 +64,9 @@
             </div>
             <div class="form-group nueva">
                 <p>Medir Perímetro
-                    <!--| <span style="color:#ff0000;">33.4" | 0.84 m--></span>
-                </p>
+                    <span style="color:#ff0000;">33.4" | 0.84 m
+            </span>
+            </p>
                 <hr>
                 <div class="btn-group btn-group-horizontal">
                     <label class="btn active">
@@ -86,10 +88,137 @@
                                             <input type="radio" name='tambor1cinco' ng-model="formData.tambor1cinco" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
                                           </label>
                 </div>
-            </div>
+            </div>-->
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="E">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="D1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="D2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="D3">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="D4">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="D5">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
 
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L3">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L4">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L5">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="V1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="V2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="V3">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="V4">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="V5">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="V TOTAL">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-group nueva">
+                <div class="btn-group btn-group-horizontal">
+                    <label class="btn active">
+                        <input type="radio" name='tambor2' ng-model="formData.tambor2" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
+                      </label>
+                    <label class="btn">
+                        <input type="radio" name='tambor2' ng-model="formData.tambor2" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
+                      </label>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
             <img src="img/tambor6.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#myModal">
             <!--<img src="img/tambor2.png" alt="" title="" class="img-responsive sombra margen center-block" data-toggle="modal" data-target="#myModal">-->
         </div>
