@@ -432,3 +432,27 @@ span.resultax {
 .form-control {
     text-transform: uppercase;
 }
+
+tr.resultronix h2 {
+    margin: 0;
+    color: #333;
+    background: #dedede;
+    padding: 5px;
+}
+
+tr.resultronix h2 span.diez {
+    font-size: 20px;
+    color: #999;
+}
+
+tr.resultronix h3 {
+    margin: 0;
+    color: #dedede;
+    background: #333;
+    padding: 5px;
+    font-size: 30px;
+}
+
+tr.resultronix .col-md-3 {
+    padding: 0 10px;
+}

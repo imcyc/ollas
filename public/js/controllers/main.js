@@ -20,13 +20,82 @@ angular.module('todoController', [])
     $scope.enviado = false;
     $scope.regresar = false;
 
+
+    $scope.V1 = function() {
+        var rtamborD1 = parseFloat($scope.formData.tamborD1);
+        var rtamborL1 = parseFloat($scope.formData.tamborL1);
+        var rtamborM1 = parseFloat($scope.formData.tamborM1);
+        var pi = 3.14159;
+        var PI1 = (pi * rtamborD1) / 12;
+        var T1 = Math.pow(rtamborL1 - ((6.35 * 2) / 1000), 2);
+        var T2 = Math.pow(rtamborM1 - ((6.35 * 2) / 1000), 2);
+        var T3 = rtamborL1 - ((6.35 * 2) / 1000);
+        var T4 = rtamborM1 - ((6.35 * 2) / 1000);
+        var T5 = T3 * T4;
+        var T6 = T1 + T2 + T5;
+        return PI1 * T6;
+        var V1 = PI1 * T6;
+    }
+
+    $scope.V2 = function() {
+        var rtamborD2 = parseFloat($scope.formData.tamborD2);
+        var rtamborL2 = parseFloat($scope.formData.tamborL2);
+        var rtamborM2 = parseFloat($scope.formData.tamborM2);
+        var pi = 3.14159;
+        var PI1 = (pi * rtamborD2) / 12;
+        var T1 = Math.pow(rtamborL2 - ((6.35 * 2) / 1000), 2);
+        var T2 = Math.pow(rtamborM2 - ((6.35 * 2) / 1000), 2);
+        var T3 = rtamborL2 - ((6.35 * 2) / 1000);
+        var T4 = rtamborM2 - ((6.35 * 2) / 1000);
+        var T5 = T3 * T4;
+        var T6 = T1 + T2 + T5;
+        return PI1 * T6;
+        var V2 = PI1 * T6;
+    }
+
+    $scope.V3 = function() {
+        var rtamborD3 = parseFloat($scope.formData.tamborD3);
+        var rtamborL3 = parseFloat($scope.formData.tamborL3);
+        var pi = 3.14159;
+        var T1 = Math.pow(rtamborD3 - ((6.35 * 2) / 1000), 2);
+        var T2 = (3 * pi * rtamborL3) / 12;
+        var T3 = T2 * T1;
+        return T3;
+        var V3 = T3;
+    }
+
+    $scope.V4 = function() {
+        var rtamborD4 = parseFloat($scope.formData.tamborD4);
+        var rtamborL4 = parseFloat($scope.formData.tamborL4);
+        var rtamborM4 = parseFloat($scope.formData.tamborM4);
+        var pi = 3.14159;
+        var PI1 = (pi * rtamborD4) / 12;
+        var T1 = Math.pow(rtamborL4 - ((6.35 * 2) / 1000), 2);
+        var T2 = Math.pow(rtamborM4 - ((6.35 * 2) / 1000), 2);
+        var T3 = rtamborL4 - ((6.35 * 2) / 1000);
+        var T4 = rtamborM4 - ((6.35 * 2) / 1000);
+        var T5 = T3 * T4;
+        var T6 = T1 + T2 + T5;
+        return PI1 * T6;
+    }
+
+    $scope.V5 = function() {
+        var rtamborD5 = parseFloat($scope.formData.tamborD5);
+        var rtamborL5 = parseFloat($scope.formData.tamborL5);
+        var rtamborM5 = parseFloat($scope.formData.tamborM5);
+        var pi = 3.14159;
+        var T1 = Math.pow(rtamborD5 - ((6.35 * 2) / 1000), 2);
+        var T2 = (pi * rtamborL5 * 3 * rtamborM5) / 12;
+        var T3 = T2 * T1;
+        return T3;
+    }
+
+    $scope.tamborVTotal = function() {
+        return ($scope.V1() + $scope.V2() + $scope.V3() + $scope.V4() + $scope.V5())
+    }
+
     $scope.scoreTambor = function() {
         var rTambor1 = parseInt($scope.formData.tambor1);
-        var rTambor1uno = parseInt($scope.formData.tambor1uno);
-        var rTambor1dos = parseInt($scope.formData.tambor1dos);
-        var rTambor1tres = parseInt($scope.formData.tambor1tres);
-        var rTambor1cuatro = parseInt($scope.formData.tambor1cuatro);
-        var rTambor1cinco = parseInt($scope.formData.tambor1cinco);
         var rTambor2 = parseInt($scope.formData.tambor2);
         var rTambor3 = parseInt($scope.formData.tambor3);
         var rTambor4 = parseInt($scope.formData.tambor4);
@@ -38,11 +107,6 @@ angular.module('todoController', [])
         var rTambor10 = parseInt($scope.formData.tambor10);
 
         if (!rTambor1) { rTambor1 = 0 };
-        if (!rTambor1uno) { rTambor1uno = 0 };
-        if (!rTambor1dos) { rTambor1dos = 0 };
-        if (!rTambor1tres) { rTambor1tres = 0 };
-        if (!rTambor1cuatro) { rTambor1cuatro = 0 };
-        if (!rTambor1cinco) { rTambor1cinco = 0 };
         if (!rTambor2) { rTambor2 = 0 };
         if (!rTambor3) { rTambor3 = 0 };
         if (!rTambor4) { rTambor4 = 0 };
@@ -53,7 +117,7 @@ angular.module('todoController', [])
         if (!rTambor9) { rTambor9 = 0 };
         if (!rTambor10) { rTambor10 = 0 };
 
-        return rTambor1 + rTambor1uno + rTambor1dos + rTambor1tres + rTambor1cuatro + rTambor1cinco + rTambor2 + rTambor3 + rTambor4 + rTambor5 + rTambor6 + rTambor7 + rTambor8 + rTambor9 + rTambor10;
+        return rTambor1 + rTambor2 + rTambor3 + rTambor4 + rTambor5 + rTambor6 + rTambor7 + rTambor8 + rTambor9 + rTambor10;
     };
 
     $scope.scorePedestalFrontal = function() {

@@ -13,113 +13,136 @@
     <p class="testa">Método: medición del tambor con una cinta métrica. Alto, largo y ancho. instrumento: flexómetro e hilo.</p>
     <div class="row">
         <div class="col-md-12 medir">
-            <!--
-            <div class="form-group nueva">
-                <p>Medir B | <span style="color:#ff0000;">5.05 m | 198.9"</span> | .25" +/-</p>
-                <hr>
-                <div class="btn-group btn-group-horizontal">
-                    <label class="btn active">
-                    <input type="radio" name='tambor1' ng-model="formData.tambor1" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
-                  </label>
-                    <label class="btn">
-                    <input type="radio" name='tambor1' ng-model="formData.tambor1" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
-                  </label>
-                </div>
-            </div>
-            <div class="form-group nueva">
-                <p>Medir C | <span style="color:#ff0000;">5.69 m | 224.2"</span> | 5" +/-</p>
-                <hr>
-                <div class="btn-group btn-group-horizontal">
-                    <label class="btn active">
-                        <input type="radio" name='tambor1uno' ng-model="formData.tambor1uno" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
-                      </label>
-                    <label class="btn">
-                        <input type="radio" name='tambor1uno' ng-model="formData.tambor1uno" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
-                      </label>
-                </div>
-            </div>
-            <div class="form-group nueva">
-                <p>Medir D | <span style="color:#ff0000;">0.64 m | 25.3"</span> | 5" +/-</p>
-                <hr>
-                <div class="btn-group btn-group-horizontal">
-                    <label class="btn active">
-                            <input type="radio" name='tambor1dos' ng-model="formData.tambor1dos" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
-                          </label>
-                    <label class="btn">
-                            <input type="radio" name='tambor1dos' ng-model="formData.tambor1dos" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
-                          </label>
-                </div>
-            </div>
-            <div class="form-group nueva">
-                <p>Medir J | <span style="color:#ff0000;">0.84 m | 33.4"</span> | .25" +/-</p>
-                <hr>
-                <div class="btn-group btn-group-horizontal">
-                    <label class="btn active">
-                                    <input type="radio" name='tambor1tres' ng-model="formData.tambor1tres" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
-                                  </label>
-                    <label class="btn">
-                                    <input type="radio" name='tambor1tres' ng-model="formData.tambor1tres" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
-                                  </label>
-                </div>
-            </div>
-            <div class="form-group nueva">
-                <p>Medir Perímetro
-                    <span style="color:#ff0000;">33.4" | 0.84 m
-            </span>
-            </p>
-                <hr>
-                <div class="btn-group btn-group-horizontal">
-                    <label class="btn active">
-                                        <input type="radio" name='tambor1cuatro' ng-model="formData.tambor1cuatro" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
-                                      </label>
-                    <label class="btn">
-                                        <input type="radio" name='tambor1cuatro' ng-model="formData.tambor1cuatro" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
-                                      </label>
-                </div>
-            </div>
-            <div class="form-group nueva">
-                <p>Medir Ext. Tambor | <span style="color:#ff0000;">2.4 m</span> | 94.5"</p>
-                <hr>
-                <div class="btn-group btn-group-horizontal">
-                    <label class="btn active">
-                                            <input type="radio" name='tambor1cinco' ng-model="formData.tambor1cinco" value="10"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>  SI CUMPLE</span>
-                                          </label>
-                    <label class="btn">
-                                            <input type="radio" name='tambor1cinco' ng-model="formData.tambor1cinco" value="0" checked="checked"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> NO CUMPLE</span>
-                                          </label>
-                </div>
-            </div>-->
             <table class="table table-striped">
                 <tbody>
                     <tr>
                         <td>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="E">
+                                <input type="number" class="form-control" id="usr" placeholder="D1" name="tamborD1" ng-model="formData.tamborD1">
                             </div>
                         </td>
                         <td>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="D1">
+                                <input type="text" class="form-control" id="usr" placeholder="D2" ng-model="formData.tamborD2">
                             </div>
                         </td>
                         <td>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="D2">
+                                <input type="text" class="form-control" id="usr" placeholder="D3" ng-model="formData.tamborD3">
                             </div>
                         </td>
                         <td>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="D3">
+                                <input type="text" class="form-control" id="usr" placeholder="D4" ng-model="formData.tamborD4">
                             </div>
                         </td>
                         <td>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="D4">
+                                <input type="text" class="form-control" id="usr" placeholder="D5" ng-model="formData.tamborD5">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L1" ng-model="formData.tamborL1">
                             </div>
                         </td>
                         <td>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="D5">
+                                <input type="text" class="form-control" id="usr" placeholder="L2" ng-model="formData.tamborL2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L3" ng-model="formData.tamborL3">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L4" ng-model="formData.tamborL4">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="L5" ng-model="formData.tamborL5">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="M1" ng-model="formData.tamborM1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="M2" ng-model="formData.tamborM2">
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="M4" ng-model="formData.tamborM4">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="M5" ng-model="formData.tamborM5">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="resultronix">
+                        <td>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>V1</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2>{{ V1() | number:5 }} <span class="diez">m<sup>3</sup></span></h2>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>V2</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2>{{ V2() | number:5 }} <span class="diez">m<sup>3</sup></span></h2>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>V3</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2>{{ V3() | number:5 }} <span class="diez">m<sup>3</sup></span></h2>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>V4</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2>{{ V4() | number:5 }} <span class="diez">m<sup>3</sup></span></h2>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>V5</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2>{{ V5() | number:5 }} <span class="diez">m<sup>3</sup></span></h2>
+                                </div>
                             </div>
                         </td>
                     </tr>
@@ -128,63 +151,6 @@
 
                         </td>
                         <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="L1">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="L2">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="L3">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="L4">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="L5">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="V1">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="V2">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="V3">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="V4">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="V5">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
 
                         </td>
                         <td>
@@ -194,15 +160,16 @@
 
                         </td>
                         <td>
-
-                        </td>
-                        <td>
-
-                        </td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="V TOTAL">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2>VT</h2>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="hidden" class="form-control" id="usr" placeholder="V TOTAL" value="{{ tamborVTotal() }}">
+                                    <h2 class="resx">{{ tamborVTotal() | number:5 }}</h2>
+                                </div>
                             </div>
+
                         </td>
                     </tr>
                 </tbody>
@@ -220,18 +187,17 @@
         </div>
         <div class="col-md-12">
             <div align="center">
-                <img src="img/tambor6.png" alt="" title="" class="img-responsive margen center-block" style="margin-bottom:10px;">
+                <img src="img/tambor6.png" alt="" title="" class="img-responsive margen center-block" style="margin-bottom:10px;" data-toggle="modal" data-target="#medidasTambor">
                 <iframe width="590" height="400" src="https://www.youtube.com/embed/vT0MvlyesB0?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
             </div>
         </div>
     </div>
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="medidasTambor" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <img src="img/tambor1.jpg" alt="" title="" class="img-responsive margen center-block">
+                    <img src="img/medidas-tanque.jpg" alt="" title="" class="img-responsive margen center-block">
 
                 </div>
             </div>
