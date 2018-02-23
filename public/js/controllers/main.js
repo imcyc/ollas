@@ -250,6 +250,7 @@ angular.module('todoController', [])
         });
 
     $scope.comenzarTodo = function() {
+
         $scope.intro = false;
         $scope.ollaentrada = false;
         $scope.tambor = true;
@@ -263,6 +264,7 @@ angular.module('todoController', [])
         $scope.general = false;
         $scope.luces = false;
         $scope.regresar = true;
+        $scope.imagentrada = "img/foto-inicio.JPG";
     };
 
     $scope.comenzarPedestalFrontal = function() {
