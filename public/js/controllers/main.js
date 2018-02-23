@@ -250,7 +250,6 @@ angular.module('todoController', [])
         });
 
     $scope.comenzarTodo = function() {
-
         $scope.intro = false;
         $scope.ollaentrada = false;
         $scope.tambor = true;
