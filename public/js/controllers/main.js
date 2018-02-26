@@ -87,7 +87,12 @@ angular.module('todoController', [])
         var T1 = Math.pow(rtamborD5 - ((6.35 * 2) / 1000), 2);
         var T2 = (pi * rtamborL5 * 3 * rtamborM5) / 12;
         var T3 = T2 * T1;
-        return T3;
+        //return T3;
+
+
+        var T25 = ((rtamborD5 - 0.0127) * 2) * 0.48 * 3 * 0.261799388 * rtamborL5;
+        return T25;
+
     }
 
     $scope.tamborVTotal = function() {
