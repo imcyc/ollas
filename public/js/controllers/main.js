@@ -33,8 +33,20 @@ angular.module('todoController', [])
         var T4 = rtamborM1 - ((6.35 * 2) / 1000);
         var T5 = T3 * T4;
         var T6 = T1 + T2 + T5;
-        return PI1 * T6;
+        //return PI1 * T6;
         var V1 = PI1 * T6;
+
+        var zzz = rtamborD1 - 0.0127;
+        var zzzz = Math.pow(zzz, 2);
+        var yyy = rtamborM1 - 0.0127;
+        var yyyy = Math.pow(yyy, 2);
+
+        var xxx = zzzz + yyyy + zzz * yyy;
+        var xxxx = xxx * rtamborL1 * 0.261799388;
+
+        return xxxx;
+
+
     }
 
     $scope.V2 = function() {
@@ -49,8 +61,20 @@ angular.module('todoController', [])
         var T4 = rtamborM2 - ((6.35 * 2) / 1000);
         var T5 = T3 * T4;
         var T6 = T1 + T2 + T5;
-        return PI1 * T6;
+        //return PI1 * T6;
         var V2 = PI1 * T6;
+
+        var zzz = rtamborD2 - 0.0127;
+        var zzzz = Math.pow(zzz, 2);
+        var yyy = rtamborM2 - 0.0127;
+        var yyyy = Math.pow(yyy, 2);
+
+        var xxx = zzzz + yyyy + zzz * yyy;
+        var xxxx = xxx * rtamborL2 * 0.261799388;
+
+        return xxxx;
+
+
     }
 
     $scope.V3 = function() {
@@ -59,10 +83,17 @@ angular.module('todoController', [])
         var pi = 3.14159;
         var T1 = Math.pow(rtamborD3 - ((6.35 * 2) / 1000), 2);
         var T2 = (3 * pi * rtamborL3) / 12;
-        var T3 = T2 * T1;
+        //var T3 = T2 * T1;
+        //return T3;
+        //var V3 = T3;
+
+        var dd = rtamborD3 - .0127;
+        var ddd = Math.pow(dd, 2);
+        var T3 = ddd * .2617 * 3 * rtamborL3;
         return T3;
-        var V3 = T3;
     }
+
+
 
     $scope.V4 = function() {
         var rtamborD4 = parseFloat($scope.formData.tamborD4);
@@ -76,7 +107,28 @@ angular.module('todoController', [])
         var T4 = rtamborM4 - ((6.35 * 2) / 1000);
         var T5 = T3 * T4;
         var T6 = T1 + T2 + T5;
-        return PI1 * T6;
+        //return PI1 * T6;
+
+        var rtamborD3 = parseFloat($scope.formData.tamborD3);
+
+
+        var cc = rtamborD3 - .0127;
+        var ccc = Math.pow(cc, 2);
+        var cccc = rtamborD4 - .0127;
+        var ccccc = Math.pow(cccc, 2);
+
+
+
+        var cccccc = cc * ccccc * rtamborL4 * 0.261799388;
+
+        var ddd = ccc + cccc + cccccc;
+        var zzz = rtamborD4 - 0.0127;
+        var zzzz = Math.pow(zzz, 2);
+        var yyy = rtamborM4 - 0.0127;
+        var yyyy = Math.pow(yyy, 2);
+        var xxx = zzzz + yyyy + zzz * yyy;
+        var xxxx = xxx * rtamborL4 * 0.261799388;
+        return xxxx;
     }
 
     $scope.V5 = function() {
