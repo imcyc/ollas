@@ -214,7 +214,7 @@ angular.module('todoController', [])
         if (!rLavado3) { rLavado3 = 0 };
         if (!rLavado4) { rLavado4 = 0 };
         if (!rLavado5) { rLavado5 = 0 };
-        return rLavado1 + rLavado2 + rLavado3 + rLavado4 + rLavado5;
+        return rLavado1 + rLavado2 + rLavado3 + rLavado4;
     };
 
     $scope.scoreGeneral = function() {
@@ -270,7 +270,7 @@ angular.module('todoController', [])
     };
 
     $scope.scoreTotal = function() {
-        return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces()) * 10 / 51;
+        return ($scope.scoreTambor() + $scope.scorePedestalFrontal() + $scope.scorePedestalTrasero() + $scope.scoreLavado() + $scope.scoreGeneral() + $scope.scoreLuces()) * 10 / 44;
     };
 
     $scope.puntosTotales = function() {
