@@ -214,7 +214,7 @@ angular.module('todoController', [])
         if (!rLavado3) { rLavado3 = 0 };
         if (!rLavado4) { rLavado4 = 0 };
         if (!rLavado5) { rLavado5 = 0 };
-        return rLavado1 + rLavado2 + rLavado3 + rLavado4;
+        return rLavado1 + rLavado2 + rLavado3 + rLavado5;
     };
 
     $scope.scoreGeneral = function() {
