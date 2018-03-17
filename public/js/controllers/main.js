@@ -416,6 +416,17 @@ angular.module('todoController', [])
 
         console.log("El test" + $scope.scoreTambor());
 
+        var rTambor6 = parseInt($scope.formData.tambor6);
+        var rTambor10 = parseInt($scope.formData.tambor10);
+        if (!rTambor6) { rTambor6 = 0 };
+        if (!rTambor10) { rTambor10 = 0 };
+        $scope.NDscoreTambor = rTambor6 + rTambor10;
+
+        var pedestal3 = parseInt($scope.formData.pedestal3);
+        var pedestal4 = parseInt($scope.formData.pedestal4);
+        if (!pedestal3) { pedestal3 = 0 };
+        if (!pedestal4) { pedestal4 = 0 };
+        $scope.NDscorePedestal = pedestal3 + pedestal4;
 
         $scope.chart = AmCharts.makeChart("chartdiv", {
             "type": "serial",
