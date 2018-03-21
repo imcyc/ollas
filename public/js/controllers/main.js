@@ -428,6 +428,17 @@ angular.module('todoController', [])
         if (!pedestal4) { pedestal4 = 0 };
         $scope.NDscorePedestal = pedestal3 + pedestal4;
 
+        var rPedestal7 = parseInt($scope.formData.pedestal7);
+        var rPedestal8 = parseInt($scope.formData.pedestal8);
+        if (!pedestal7) { pedestal7 = 0 };
+        if (!pedestal8) { pedestal8 = 0 };
+        $scope.NDscorePedestalTrasero = pedestal7 + pedestal8;
+
+        var rGeneral5 = parseInt($scope.formData.general5);
+        if (!rGeneral5) { rGeneral5 = 0 };
+        $scope.NDscoreGeneral = rGeneral5;
+
+
         $scope.chart = AmCharts.makeChart("chartdiv", {
             "type": "serial",
             "theme": "light",
